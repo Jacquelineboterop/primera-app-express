@@ -10,7 +10,7 @@ const express = require('express');
 const app = express();
 app.get('/', (req, res) => { 
    if(req.query.nombre != null) 
-  { res.send('<h1>Hola Pedro!</h1>' );   
+  { res.send('<h1>Hola Juan!</h1>' );   
    }
      else { res.send('<h1>Hola desconocido</h1>');
           }    });
