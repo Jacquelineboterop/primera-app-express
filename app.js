@@ -24,7 +24,7 @@ const app = express();
 
 app.get('/', (req, res) => { 
   let str=''
-  for (let index = 1; index < 50; index++) {
+  for (let index = 1; index <= 50; index++) {
     if(index%2 ===0){
       str += '<p>'+index+' Soy Par!</p>' ;
     }
