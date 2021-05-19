@@ -33,7 +33,7 @@ app.get('/', (req, res) => {
   }
   res.send(`${str}`);
 });
-*/
+
 
 const express = require('express');
 const app=express();
@@ -60,4 +60,17 @@ app.post('/mostrartexto', (req, res) => {
 
 var server=app.listen(3000, () => {
   console.log('Servidor web iniciado');
+}); */
+
+
+var express = require('express');
+var app = express();
+var useragent = require('express-useragent');
+ 
+app.use(useragent.express());
+app.get('/', function(req, res){
+  
+    res.send(req.useragent.browser);
 });
+app.listen(3000);
+
