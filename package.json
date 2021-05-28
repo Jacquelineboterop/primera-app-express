@@ -10,7 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "express-useragent": "^1.0.15"
+    "express-useragent": "^1.0.15",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.11"
   },
   "devDependencies": {},
   "description": ""
